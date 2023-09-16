@@ -7,19 +7,19 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    title: "Dictionary App",
-    techs: ["ReactJS (NextJS)", "react-query", "zod"],
-    link: "https://github.com/MaeWolff/dictionary-app",
+    title: "Conventional Commits CLI",
+    techs: ["Golang", "Brew", "Github-actions"],
+    link: "https://github.com/muandane/goji",
   },
   {
-    title: "Portfolio / Lina BLIDI",
-    techs: ["ReactJS (NextJS)", "TypeScript"],
-    link: "https://www.linablidi.fr/",
+    title: "Chart-version CLI+Helm Plugin",
+    techs: ["Helm", "Golang", "Shell", "Kuberentes"],
+    link: "https://github.com/muandane/chart-version",
   },
   {
-    title: "Portfolio / Template",
-    techs: ["Astro"],
-    link: "/",
+    title: "Pisq, postgreql database backup into Azure storage",
+    techs: ["PostgresQL", "Golang", "Azure"],
+    link: "https://github.com/muandane/pisq",
     isComingSoon: true,
   },
 ];
