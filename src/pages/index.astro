@@ -7,7 +7,7 @@ import PostCard from "@/components/PostCard.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
 import Link from "@/components/shared/Link.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
-
+import FootNote from "@/components/FootNote.astro";
 import presentation from "@/data/presentation";
 import projects from "@/data/projects";
 
@@ -100,5 +100,6 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 
       <SocialLinks />
     </article>
+    <FootNote class="flex justify-center" />
   </main>
 </Layout>

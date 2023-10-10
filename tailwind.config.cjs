@@ -7,8 +7,11 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
+        medieval: ['MedievalSharp', 'normal'],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };

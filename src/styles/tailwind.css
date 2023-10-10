@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* body {
+  @apply w-screen h-screen text-center grid place-items-center bg-[#1d1e26] text-[#f8f8f2] overflow-hidden;
+  font-family: "MedievalSharp", cursive;
+} */
+.wrapper {
+  @apply relative;
+}
+
+h1 {
+  @apply text-9xl flex;
+}
+
+.letter {
+  @apply relative after:content-[attr(data-letter)] after:absolute after:z-[2] after:left-0 after:top-0;
+}
+
+[data-letter="e"]::after {
+  clip-path: polygon(0% 0%, 50% 0%, 40% 80%, 0% 80%);
+}
+[data-letter="i"]::after {
+  clip-path: polygon(50% 10%, 50% 10%, 90% 90%, 10% 90%);
+}
+[data-letter="Z"]::after {
+  clip-path: polygon(0% 10%, 50% 10%, 90% 90%, 10% 90%);
+}
+[data-letter="n"]::after {
+  clip-path: polygon(0% 10%, 0% 10%, 90% 90%, 10% 90%);
+}
+.⚔️ {
+  @apply absolute z-[1] left-[180px] w-[390px] -translate-x-full fill-[#6A9C89] transition-transform duration-[ease] delay-200 top-4;
+}
+.wrapper:hover .⚔️ {
+  @apply translate-x-0 ; 
+}
