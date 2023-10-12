@@ -10,7 +10,7 @@
   @apply relative;
 }
 
-h1 {
+h2 {
   @apply text-9xl flex;
 }
 
