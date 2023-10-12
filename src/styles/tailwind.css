@@ -10,10 +10,6 @@
   @apply relative;
 }
 
-h2 {
-  @apply text-9xl flex;
-}
-
 .letter {
   @apply relative after:content-[attr(data-letter)] after:absolute after:z-[2] after:left-0 after:top-0;
 }
