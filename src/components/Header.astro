@@ -14,7 +14,7 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
     <ul role="list" class="flex flex-row gap-2">
       <li>
         <a
-          href="/portfolio/"
+          href="/"
           class:list={{
             ["hover:text-neutral-100"]: true,
             ["text-neutral-100"]: pathname === "/",
@@ -24,7 +24,7 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
       <li>/</li>
       <li>
         <a
-          href="/portfolio/posts"
+          href="/posts"
           class:list={{
             ["hover:text-neutral-100"]: true,
             ["text-neutral-100"]: pathname === "/posts",
