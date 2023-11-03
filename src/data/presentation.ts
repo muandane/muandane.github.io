@@ -16,7 +16,7 @@ const presentation: Presentation = {
   title: "Hi, I’m Zine El Abidine 👋",
   profile: "/profile.jpg",
   description:
-    "Bonjour, i'm an *Algerian SRE* with experience in *Azure Cloud Services, Kuberentes, Terraform, Golang*. I am currently working at *IT-Challenge part of Simplifi-ED* on projects that involve *Kubernetes, Gitlab CICD & GitOps, Terraform & Ansible IaC*. Outside of work I read mangas and learn about GoLang.",
+    "Bonjour, i'm an *SRE* with experience in *Azure Cloud Services, Kubernetes, Terraform, Golang, Ansible and Gitlab & Github CICDs*. I am currently working at *IT-Challenge part of Simplifi-ED* on projects that involve *Kubernetes, Gitlab CICD & GitOps, Terraform & Ansible IaC*. Outside of work I read mangas and learn about GoLang.",
   socials: [
     {
       label: "𝕏",
