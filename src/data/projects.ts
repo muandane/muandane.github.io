@@ -17,9 +17,9 @@ const projects: Project[] = [
 		link: "https://github.com/muandane/chart-version",
 	},
 	{
-		title: "AzurePrice CLI for checking prices of Azure services",
+		title: "Cloudcost CLI for checking prices of Azure services",
 		techs: ["Cloud", "Golang", "Azure", "Zsh", "LipGloss"],
-		link: "https://github.com/muandane/azureprice",
+		link: "https://github.com/muandane/cloudcost",
 	},
 	{
 		title: "Pisq, postgreql database backup into Azure storage",

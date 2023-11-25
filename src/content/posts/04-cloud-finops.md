@@ -1,7 +1,7 @@
 ---
 title: "Navigating the Cloud Cost Maze"
 publishedAt: 2023-10-12
-description: "An Introduction to FinOps, Infracost, Komiser, and AzurePrice."
+description: "An Introduction to FinOps, Infracost, Komiser, and Cloudcost (AzurePrice)."
 slug: "cloud-finops" 
 isPublish: true
 ---
@@ -39,11 +39,11 @@ Komiser has it's own UI that showcases its most usefull features:
 
 ![komiser](https://github.com/tailwarden/komiser/raw/develop/.github/images/dashboard.png)
 
-## AzurePrice
+## Cloudcost
 
-In addition to the previously mentioned tools, there's another tool that can help you manage your cloud costs more effectively. AzurePrice is a Command Line Interface (CLI) tool that retrieves pricing information for Azure services directly from the terminal. While it might not be a FinOps tool in the strictest sense, it's a valuable tool for understanding the costs you can expect to incur when using Azure services.
+In addition to the previously mentioned tools, there's another tool that can help you manage your cloud costs more effectively. Cloudcost is a CLI tool that retrieves pricing information for Azure services directly from the terminal. While it might not be a FinOps tool in the strictest sense, it's a valuable tool for understanding the costs you can expect to incur when using Azure services.
 
-![azureprice](https://github.com/muandane/azureprice/raw/main/demo.gif)
+![Cloudcost](https://github.com/muandane/cloudcost/raw/main/demo-dark.gif)
 
 ## Conclusion
 
