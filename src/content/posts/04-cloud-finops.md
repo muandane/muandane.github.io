@@ -3,6 +3,7 @@ title: "Navigating the Cloud Cost Maze"
 publishedAt: 2023-10-12
 description: "An Introduction to FinOps, Infracost, Komiser, and Cloudcost (AzurePrice)."
 slug: "cloud-finops" 
+ogImage: "../../assets/images/blog-pics/gl-cover.webp"
 isPublish: true
 ---
 

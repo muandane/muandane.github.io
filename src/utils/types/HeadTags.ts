@@ -1,5 +1,6 @@
 export type HeadTags = {
 	title?: string;
+	ogImage?: string;
 	description?: string;
 	noindex?: boolean;
 	og?: {

@@ -3,6 +3,7 @@ title: "Terraform State Managment in Azure"
 publishedAt: 2023-05-24
 description: "Terraform AKS deployment state managment with azure storage account"
 slug: "azure-state-managment"
+ogImage: "../../assets/images/blog-pics/gl-cover.webp"
 isPublish: true
 ---
 

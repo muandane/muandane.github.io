@@ -2,7 +2,8 @@
 title: "Getting Started with Azure SDK for Go"
 publishedAt: 2023-09-18
 description: "A Journey into Developing Storage Drivers."
-slug: "azure-go-sdk" 
+slug: "azure-go-sdk"
+ogImage: "~/assets/images/blog-pics/download.png"
 isPublish: true
 ---
 

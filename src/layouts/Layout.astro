@@ -5,7 +5,7 @@ import theme from "@/data/theme";
 import SEOTags from "@/components/seo/SEOTags.astro";
 import type { HeadTags } from "@/utils/types/HeadTags";
 
-import "@fontsource/open-sans";
+import "@fontsource/josefin-sans";
 import "@/styles/tailwind.css";
 import "@/styles/post.css";
 
@@ -16,7 +16,7 @@ const headTags = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-  <SEOTags {...headTags} />
+  <SEOTags ogImage="" {...headTags} />
 
   <body
     class="mx-auto flex min-h-screen max-w-[872px] flex-col gap-9 bg-neutral-900 px-10 py-8 text-sm text-neutral-400 md:gap-20 md:py-16"
@@ -27,7 +27,7 @@ const headTags = Astro.props;
     <slot />
     <style is:global>
       html {
-        font-family: "Open Sans";
+        font-family: "Josefin Sans";
       }
     </style>
   </body>

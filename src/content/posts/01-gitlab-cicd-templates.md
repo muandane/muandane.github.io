@@ -3,6 +3,7 @@ title: "Gitlab CICD Templates"
 publishedAt: 2023-01-13
 description: "Writing CI templates to run build, test, and deploy your project is challenging to do in a way that prioritizes pipeline speed, safety, and easy maintenance."
 slug: "gitlab-cicd-templates"
+ogImage: "../../../public/images/blog-pics/gl-cover.webp"
 isPublish: true
 ---
 

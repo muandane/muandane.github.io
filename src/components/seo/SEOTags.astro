@@ -3,21 +3,21 @@ import { SEO } from "astro-seo";
 import { SITE_URL } from "@/data/config";
 import type { HeadTags } from "@/utils/types/HeadTags";
 
-type Props = HeadTags;
+type Props = HeadTags & { ogImage: string };
 
-const { title, description, noindex, og } = Astro.props;
+const { title, description, noindex, ogImage } = Astro.props;
 
 const DEFAULT_TITLE_PAGE = "Zine El Abidine Moualhi - Portfolio";
 const DEFAULT_DESCRIPTION_PAGE = "A minimal portfolio of a Junior DevOps Engineer.";
 const DEFAULT_URL_SITE = SITE_URL;
 
 const openGraph = {
-  title: title || og?.title || DEFAULT_TITLE_PAGE,
-  type: og?.type || "website",
-  image: og?.image || "/opengraph-image.jpg",
-  alt: og?.alt || "Junior DevOps Engineer & part-time Tomfoolery Expert's portfolio",
+  title: title || DEFAULT_TITLE_PAGE,
+  type: "website",
+  image: ogImage || "/opengraph-image.jpg",
+  alt: description  ||"Junior DevOps Engineer & part-time Tomfoolery Expert's portfolio",
   url: DEFAULT_URL_SITE,
-  description: og?.description || DEFAULT_DESCRIPTION_PAGE,
+  description: description|| DEFAULT_DESCRIPTION_PAGE,
 };
 ---
 
