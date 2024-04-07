@@ -17,7 +17,7 @@ dependencies:
   '@fontsource-variable/jetbrains-mono':
     specifier: ^5.0.20
     version: 5.0.20
-  '@fontsource/roboto':
+  '@fontsource/josefin-sans':
     specifier: ^5.0.12
     version: 5.0.12
   '@swup/astro':
@@ -1889,7 +1889,7 @@ packages:
     resolution: {integrity: sha512-IWJnmY9vT5Olcac1vzA7FMdnojCrZWMq+g7SqC2jsFpY0LQTjIgp9gBjjw9kUOkNbLw37/evZO4w6rdPeMA68A==}
     dev: false
 
-  /@fontsource/roboto@5.0.12:
+  /@fontsource/josefin-sans@5.0.12:
     resolution: {integrity: sha512-x0o17jvgoSSbS9OZnUX2+xJmVRvVCfeaYJjkS7w62iN7CuJWtMf5vJj8LqgC7ibqIkitOHVW+XssRjgrcHn62g==}
     dev: false
 
