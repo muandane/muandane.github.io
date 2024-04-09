@@ -12,7 +12,7 @@ import svelte from "@astrojs/svelte"
 import swup from '@swup/astro';
 
 const oklchToHex = (str) => {
-  const DEFAULT_HUE = 250
+  const DEFAULT_HUE = 165
   const regex = /-?\d+(\.\d+)?/g
   const matches = str.string.match(regex)
   const lch = [matches[0], matches[1], DEFAULT_HUE]

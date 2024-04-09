@@ -10,7 +10,7 @@ export const siteConfig: SiteConfig = {
   title: 'Zine El Abidine Moualhi',
   subtitle: 'Demo Site',
   lang: 'en',
-  themeHue: 250,
+  themeHue: 165,
   banner: {
     enable: false,
     src: 'assets/images/demo-banner.png',
