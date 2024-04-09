@@ -2,7 +2,7 @@
 title: "Getting Started with Azure SDK for Go"
 published: 2023-09-18
 description: "A Journey into Developing Storage Drivers."
-image: "../../assets/images/blog-pics/go-sdk.jpg"
+image: "../../assets/images/blog-pics/azure-go-sdk.jpg"
 draft: false
 tags: [Golang, Azure, Demo]
 category: Guides
