@@ -8,7 +8,8 @@ import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
   title: 'Zine El Abidine Moualhi',
-  subtitle: 'Demo Site',
+  subtitle: 'My Web Site',
+  description: 'Container-dwelling sorcerer crafting Kubernetes and Terraform enchantments 🧙‍♂️ 🔮.',
   lang: 'en',
   themeHue: 165,
   banner: {

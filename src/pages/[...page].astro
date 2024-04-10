@@ -6,6 +6,7 @@ import {getSortedPosts} from "../utils/content-utils";
 import {getPostUrlBySlug} from "../utils/url-utils";
 import {PAGE_SIZE} from "../constants/constants";
 import PostPage from "../components/PostPage.astro";
+import { siteConfig } from "@/config";
 
 export async function getStaticPaths({ paginate }) {
     const allBlogPosts = await getSortedPosts();
@@ -18,7 +19,7 @@ const len = page.data.length;
 
 ---
 
-<MainGridLayout>
+<MainGridLayout title={siteConfig.title} description={siteConfig.description} >
     <PostPage page={page}></PostPage>
     <Pagination class="mx-auto onload-animation" page={page} style=`animation-delay: calc(var(--content-delay) + ${(len)*50}ms)`></Pagination>
 </MainGridLayout>

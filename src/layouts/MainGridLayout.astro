@@ -6,19 +6,23 @@ import {pathsEqual} from "@utils/url-utils";
 import Footer from "@components/Footer.astro";
 import BackToTop from "@components/control/BackToTop.astro";
 import {siteConfig} from "@/config";
+import { Image, imageConfig } from "astro:assets";
+import type { ImageFunction } from "astro:content";
 
 interface Props {
     title: string;
     banner?: string;
+    description?: string;
+    image: ImageFunction;
 }
 
-const { title, banner } = Astro.props
+const { title, banner, description, image } = Astro.props
 const isHomePage = pathsEqual(Astro.url.pathname, '/')
 const enableBanner = siteConfig.banner.enable
 
 ---
 
-<Layout title={title} banner={banner}>
+<Layout title={title} banner={banner} image={image} description={description}>
 <div class="max-w-[var(--page-width)] min-h-screen grid grid-cols-[17.5rem_auto] grid-rows-[auto_auto_1fr_auto] lg:grid-rows-[auto_1fr_auto]
     mx-auto gap-4 relative px-0 md:px-4"
 >

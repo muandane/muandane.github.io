@@ -1,7 +1,7 @@
 export type SiteConfig = {
   title: string
   subtitle: string
-
+  description: string
   lang: string
 
   themeHue: number
