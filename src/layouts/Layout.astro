@@ -8,12 +8,13 @@ import ImageWrapper from "@components/misc/ImageWrapper.astro";
 import {pathsEqual} from "@utils/url-utils";
 import ConfigCarrier from "@components/ConfigCarrier.astro";
 import {siteConfig} from "@/config";
+import { Image } from "astro:assets";
 
 interface Props {
 	title: string;
 	banner: string;
 	description: string;
-	image: string;
+	ogImage?: string;
 }
 
 let { title, banner, description } = Astro.props;
@@ -75,7 +76,7 @@ if (title) {
 		<meta name="description" content={description}>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<meta property="og:image" content={Astro.props.image} />
+		<meta property="og:image" content={Astro.props.ogImage} />
 		<link rel="icon" media="(prefers-color-scheme: light)" href="/favicon/favicon-light-32.png" sizes="32x32">
 		<link rel="icon" media="(prefers-color-scheme: light)" href="/favicon/favicon-light-128.png" sizes="128x128">
 		<link rel="icon" media="(prefers-color-scheme: light)" href="/favicon/favicon-light-180.png" sizes="180x180">

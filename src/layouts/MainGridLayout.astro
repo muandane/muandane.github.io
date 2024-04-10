@@ -6,23 +6,30 @@ import {pathsEqual} from "@utils/url-utils";
 import Footer from "@components/Footer.astro";
 import BackToTop from "@components/control/BackToTop.astro";
 import {siteConfig} from "@/config";
-import { Image, imageConfig } from "astro:assets";
-import type { ImageFunction } from "astro:content";
+import {getSortedPosts} from "@utils/content-utils";
 
+export async function getStaticPaths() {
+    let posts = await getSortedPosts()
+    const paths = posts.map(post => ({ params: { slug: post.slug } }))
+    return { paths, fallback: false }
+}
+
+const { slug } = Astro.params;
 interface Props {
     title: string;
     banner?: string;
     description?: string;
-    image: ImageFunction;
 }
+const { title, banner, description } = Astro.props
 
-const { title, banner, description, image } = Astro.props
 const isHomePage = pathsEqual(Astro.url.pathname, '/')
 const enableBanner = siteConfig.banner.enable
 
+const imgLink = `${Astro.url.host}/og-image/${slug}`;
+
 ---
 
-<Layout title={title} banner={banner} image={image} description={description}>
+<Layout title={title} banner={banner} ogImage={imgLink} description={description}>
 <div class="max-w-[var(--page-width)] min-h-screen grid grid-cols-[17.5rem_auto] grid-rows-[auto_auto_1fr_auto] lg:grid-rows-[auto_1fr_auto]
     mx-auto gap-4 relative px-0 md:px-4"
 >
