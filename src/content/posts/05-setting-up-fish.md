@@ -5,7 +5,7 @@ description: "From zsh to fish a Setup Guide"
 image: "../../assets/images/blog-pics/fish-shell.jpg"
 tags: ["Shell", "ZSH", "Starship"]
 category: 'Guides'
-draft: true
+draft: false
 ---
 
 When I started my journey as a DevOps engineer, I started with zsh and was super satisfied. Over time, I built my own configuration on top of oh-my-zsh, adding plugins, themes, and customizations to make my terminal experience great.
