@@ -56,6 +56,9 @@ dependencies:
   rehype-slug:
     specifier: ^6.0.0
     version: 6.0.0
+  remark-alerts:
+    specifier: ^0.0.1
+    version: 0.0.1(@types/mdast@4.0.3)(unified@11.0.4)
   remark-math:
     specifier: ^6.0.0
     version: 6.0.0
@@ -7844,6 +7847,17 @@ packages:
   /relateurl@0.2.7:
     resolution: {integrity: sha512-G08Dxvm4iDN3MLM0EsP62EDV9IuhXPR6blNz6Utcp7zyV3tr4HVNINt6MpaRWbxoOHT3Q7YN2P+jaHX8vUbgog==}
     engines: {node: '>= 0.10'}
+    dev: false
+
+  /remark-alerts@0.0.1(@types/mdast@4.0.3)(unified@11.0.4):
+    resolution: {integrity: sha512-xDUy3FqgYu3rUsYovZKLXZwHuM7M/XUFxsTDAMeEKoHsg9hiEHR59FkRqeGtzZDg8ThEJYnFiJJW49n9ruvVLw==}
+    peerDependencies:
+      '@types/mdast': ^4.0.3
+      unified: ^11.0.4
+    dependencies:
+      '@types/mdast': 4.0.3
+      unified: 11.0.4
+      unist-util-visit: 5.0.0
     dev: false
 
   /remark-gfm@4.0.0:
