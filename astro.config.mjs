@@ -7,6 +7,8 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings"
 import rehypeKatex from "rehype-katex"
 import rehypeSlug from "rehype-slug"
 import remarkMath from "remark-math"
+// import remarkGfm from "remark-gfm"
+import remarkAlerts from "remark-alerts"
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs"
 import svelte from "@astrojs/svelte"
 import swup from '@swup/astro';
@@ -52,7 +54,7 @@ export default defineConfig({
     svelte(),
   ],
   markdown: {
-    remarkPlugins: [remarkMath, remarkReadingTime],
+    remarkPlugins: [remarkMath, remarkReadingTime, remarkAlerts],
     rehypePlugins: [
       rehypeKatex,
       rehypeSlug,
