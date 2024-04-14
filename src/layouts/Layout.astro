@@ -9,15 +9,15 @@ import {pathsEqual} from "@utils/url-utils";
 import ConfigCarrier from "@components/ConfigCarrier.astro";
 import {siteConfig} from "@/config";
 import { Image } from "astro:assets";
-
+import { SITE_URL } from "../constants/constants";
 interface Props {
 	title: string;
 	banner: string;
 	description: string;
 	ogImage?: string;
 }
-
-let { title, banner, description } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+let { title, banner, description, ogImage = `${SITE_URL}/opengraph-image.jpg` } = Astro.props;
 
 const isHomePage = pathsEqual(Astro.url.pathname, '/');
 
@@ -76,7 +76,13 @@ if (title) {
 		<meta name="description" content={description}>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<meta property="og:image" content={Astro.props.ogImage} />
+
+		<meta property="og:image" content={ogImage} />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content={title} />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:description" content={description} />
+		<meta property="og:locale" content="en_GB" />
 		<link rel="icon" media="(prefers-color-scheme: light)" href="/favicon/favicon-light-32.png" sizes="32x32">
 		<link rel="icon" media="(prefers-color-scheme: light)" href="/favicon/favicon-light-128.png" sizes="128x128">
 		<link rel="icon" media="(prefers-color-scheme: light)" href="/favicon/favicon-light-180.png" sizes="180x180">

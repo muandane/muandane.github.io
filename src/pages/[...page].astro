@@ -19,7 +19,7 @@ const len = page.data.length;
 
 ---
 
-<MainGridLayout title={siteConfig.title} description={siteConfig.description} >
+<MainGridLayout title={siteConfig.title} banner={siteConfig.banner} description={siteConfig.description} >
     <PostPage page={page}></PostPage>
     <Pagination class="mx-auto onload-animation" page={page} style=`animation-delay: calc(var(--content-delay) + ${(len)*50}ms)`></Pagination>
 </MainGridLayout>
